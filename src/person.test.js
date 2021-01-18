@@ -5,5 +5,5 @@ test('Person constructs with a first and last name', () => {
 });
 test('fullName returns Person instance full name', () => {
   let testPerson = new Person('John', 'Doe');
-  expect(testPerson.fullName()).toBe('John M');
+  expect(testPerson.fullName()).toBe('John Doe');
 });
