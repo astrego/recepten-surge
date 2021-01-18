@@ -7,10 +7,9 @@ cache:
 deploy:
 
 before_script:
-  - 'npm i -g parcel'
+  - 'npm i -g parcel-bundler'
   - 'npm ci'
 script:
-  - 'npm run test'
   - 'npm run build'
 after_success:
   - surge --project ./dist --domain recepten.surge.sh
